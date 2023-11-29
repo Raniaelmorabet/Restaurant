@@ -1,0 +1,468 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: rgb(58, 51, 39);
+}
+::-webkit-scrollbar-thumb {
+    background-color: #c8aa80;
+    border-radius: 6px;
+}
+@font-face {
+    src: url("fonts/Roboto.ttf");
+    font-family: Roboto;
+}
+@font-face {
+    src: url("fonts/Miniver.ttf");
+    font-family: Miniver;
+}
+@font-face {
+    src:url("fonts/Caviar.ttf");
+    font-family: myFont;
+}
+body {
+    background-color: #090d0e;
+    margin: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.navBar{
+    background-size: cover;
+    background: url("images/d1.jpg") no-repeat center;
+    height: 800px;
+}
+.navbarMenus{
+    color: #fdfdfd;
+    font-family: myFont;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    left: 638px;
+    gap: 61px;
+    top: 60px;
+}
+.navbarMenus button{
+    height: 60px;
+    width: 210px;
+    line-height: 55px;
+    letter-spacing: 2px;
+    font-family: myFont;
+    background-color: #c9ab81;
+    border: none;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    bottom: -24px;
+    left: 658px;
+    cursor: pointer;
+}
+.navbarMenus button:hover{
+    border: 2px solid #c9ab81;
+    background: transparent;
+    transition: background 0.5s ease-in-out;
+}
+.navbarMenus #book{
+    font-weight: 800;
+    font-size: 16px;
+    padding-left: 27px
+}
+.icon1:before{
+    position: absolute;
+    right: 252px;
+    top: 63px;
+}
+a{
+    color: #fdfdfd;
+    text-decoration: none;
+}
+a:hover{
+    color: #c9ab81;
+}
+.navbarHeader h3{
+    color: white;
+    font-family: myFont;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 74px;
+    bottom: 702px;
+    font-size: 27px;
+}
+.navbarHeader p{
+    color: rgb(219 219 219 / 85%);
+    font-family: myFont;
+    position: absolute;
+    left: 196px;
+    bottom: 705px;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+.navbarBody p{
+    font-family: "Miniver", cursive;
+    color: #c9ab81;
+    font-size: 18px;
+    position: absolute;
+    bottom: 503px;
+    left: 201px;
+    transform-origin: top;
+    transition: all 1000ms ease;
+}
+.navbarBody h2{
+    font-family: myFont;
+    color: white;
+    position: absolute;
+    left: 202px;
+    bottom: 327px;
+    font-size: 72px;
+    font-weight: 700;
+    transform-origin: top;
+    transition: all 1000ms ease;
+}
+.btn1{
+    height: 60px;
+    width: 177px;
+    line-height: 55px;
+    letter-spacing: 2px;
+    font-family: myFont;
+    background-color: #c9ab81;
+    border: none;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    left: 203px;
+    top: 487px;
+    font-size: 17px;
+    cursor: pointer;
+    transform-origin: top;
+    transition: all 1000ms ease;
+}
+.btn2 {
+    height: 60px;
+    width: 177px;
+    line-height: 55px;
+    letter-spacing: 2px;
+    font-family: myFont;
+    background-color: #c9ab81;
+    border: none;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    left: 414px;
+    top: 487px;
+    font-size: 17px;
+    cursor: pointer;
+    transform-origin: top;
+    transition: all 1000ms ease;
+}
+.btn1:hover{
+    border: 2px solid #c9ab81;
+    background: transparent;
+    transition: background 0.5s ease-in-out;
+}
+.btn2:hover{
+    border: 2px solid #c9ab81;
+    background: transparent;
+    transition: background 0.5s ease-in-out;
+}
+div .box2{
+    position: absolute;
+    left: 612px;
+    bottom: -70px;
+    width: 296px;
+    padding: 36px 40px;
+    color: white;
+    background-color: #0e1415;
+    height: 61px;
+}
+div .box3{
+   position: absolute;
+    left: 1015px;
+   bottom: -70px;
+    width: 296px;
+    padding: 36px 40px;
+    color: white;
+    background-color: #0e1415;
+    height: 61px;
+}
+div .box1{
+   position: absolute;
+    left: 203px;
+    bottom: -70px;
+    width: 296px;
+    padding: 36px 40px;
+    color: white;
+    background-color: #0e1415;
+    height: 61px;
+}
+.head1, .head2, .head3{
+    font-family: myFont;
+    font-weight: 700;
+    padding-bottom: 12px;
+    font-size: 18px;
+}
+.head1{
+    position: absolute;
+    bottom: 65px;
+    right: 74px;
+}
+.head2{
+    position: absolute;
+    bottom: 65px;
+    right: 55px;
+}
+.head3{
+    position: absolute;
+    bottom: 65px;
+    right: 95px;
+}
+.body1, .body2, .body3{
+    font-family: Roboto;
+    font-weight: normal;
+    color: #7e888a;
+    font-size: 14px;
+    padding-left: 88px;
+    position: absolute;
+    bottom: 27px;
+    line-height: 1.5;
+}
+.icon{
+    background: url(icons/fork.png) center/contain no-repeat;
+    width: 16%;
+    height: 70px;
+    z-index: 50;
+    position: absolute;
+    bottom: 35px;
+    transition: transform 0.7s ease;
+    cursor: pointer;
+}
+.box1:hover .icon{
+    transform: rotateY(360deg);
+}
+.icon:hover{
+    transform: rotateY(360deg);
+}
+div .utensils{
+    background: url(icons/utensils.png) center/contain no-repeat;
+    width: 20%;
+    height: 74px;
+    z-index: 50;
+    position: absolute;
+    bottom: 35px;
+    transition: transform 0.7s ease;
+    cursor: pointer;
+    left: 30px;
+}
+
+div .box2:hover .utensils{
+    transform: rotateY(360deg);
+}
+div .plate{
+    background: url(icons/plate.png) center/contain no-repeat;
+    width: 21%;
+    height: 67px;
+    z-index: 50;
+    position: absolute;
+    right: 272px;
+    bottom: 35px;
+    transition: transform 0.7s ease;
+    cursor: pointer;
+}
+div .box3:hover .plate{
+    transform: rotateY(360deg);
+}
+div .pic1{
+    position: absolute;
+    right: 814px;
+    top: 997px;
+    overflow: hidden;
+}
+.pic2{
+    position: absolute;
+    right: 1110px;
+    top: 965px;
+    width: 270px;
+    overflow: hidden;
+}
+div .pic4{
+    position: absolute;
+    right: 1110px;
+    top: 1275px;
+    width: 270px;
+    overflow: hidden;
+}
+div .pic3{
+    position: absolute;
+    right: 814px;
+    top: 1307px;
+    width: 270px;
+    overflow: hidden;
+}
+div .pic1::before,
+.pic2::before,
+.pic3::before,
+.pic4::before{
+    content: '';
+    top: -500px;
+    left: 11px;
+    position: absolute;
+    width: 200px;
+    height: 600px;
+    transition-duration: 0.5s;
+    background: rgba(255, 255, 255, 0.37);
+    rotate: 52deg;
+}
+div .pic1:hover::before,
+.pic2:hover::before,
+.pic3:hover::before,
+.pic4:hover::before{
+    opacity: 0.3;
+    top:254px;
+}
+#about{
+    color: #c9ab81;
+    font-family: "Miniver", cursive;
+    font-size: 18px;
+    position: absolute;
+    right: 665px;
+    bottom: -325px;
+}
+#text{
+    color: #acb8bb;
+    line-height: 1.75;
+    font-family: 'Roboto';
+    position: absolute;
+    right: 219px;
+    top: 1289px;
+    font-size: 16px;
+}
+#secondPageHead{
+    color: #fff;
+    font-family: "myFont";
+    padding: 5px 0px 15px;
+    font-weight: 700;
+    font-size: 60px;
+    position: absolute;
+    right: 314px;
+    top: 1120px;
+}
+#btn{
+    height: 60px;
+    width: 177px;
+    line-height: 55px;
+    letter-spacing: 2px;
+    font-family: myFont;
+    background-color: #c9ab81;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 1456px;
+    left: 851px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+}
+#btn:hover {
+    border: 2px solid #c9ab81;
+    background: transparent;
+    transition: background 0.5s ease-in-out;
+}
+.sticky.scrolled {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition-duration: 0.8s;
+    z-index: 1000;
+    padding-top: 89px;
+    background-color: black;
+}
+.navbarMenus.scrolled{
+    top: 35px;
+}
+#book.scrolled{
+    top: -24px;
+}
+.icon1.scrolled:before{
+    position: fixed;
+    top: 33px;
+    z-index: 3000;
+}
+.navbarHeader.scrolled{
+    position: fixed;
+    z-index: 500;
+    bottom: 23px;
+}
+.thirdPage{
+    background-color: #06090a;
+    color: white;
+    position: absolute;
+    top: 1710px;
+    right: 0px;
+    padding:332px 956px;
+    margin-right: 16px;
+}
+.aboutUs{
+    color: #c9ab81;
+    font-family: "Miniver", cursive;
+    font-size: 18px;
+    position: absolute;
+    top: 184px;
+    right: 746px;
+}
+.thirdPageHeader{
+    color: #fff;
+    font-family: "myFont";
+    font-size: 41px;
+    line-height: 1.167;
+    padding: 5px 0px 15px;
+    position: absolute;
+    top: 210px;
+    right: 615px;
+    text-align: center;
+}
+#thirdText{
+    color: #acb8bb;
+    line-height: 1.75;
+    font-family: 'Roboto';
+    position: absolute;
+    font-size: 16px;
+    top: 375px;
+    right: 559px;
+    text-align: center;
+}
+#thirdPageB{
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+.thirdPageBtn button{
+    height: 60px;
+    width: 177px;
+    line-height: 55px;
+    letter-spacing: 2px;
+    font-family: myFont;
+    background-color: #c9ab81;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    top: 515px;
+    right: 696px;
+}
+.thirdPageBtn button:hover{
+    border: 2px solid #c9ab81;
+    background: transparent;
+    transition: background 0.5s ease-in-out;
+}
+.pic5{
+    position: absolute;
+    top: 115px;
+    right: 172px;
+}
+.pic6{
+    position: absolute;
+    top: 115px;
+    right: 1090px;
+}
