@@ -279,6 +279,7 @@ div .pic1{
     right: 814px;
     top: 997px;
     overflow: hidden;
+    height: 281px;
 }
 .pic2{
     position: absolute;
@@ -286,6 +287,7 @@ div .pic1{
     top: 965px;
     width: 270px;
     overflow: hidden;
+    height: 281px;
 }
 div .pic4{
     position: absolute;
@@ -293,6 +295,7 @@ div .pic4{
     top: 1275px;
     width: 270px;
     overflow: hidden;
+    height: 281px;
 }
 div .pic3{
     position: absolute;
@@ -300,6 +303,7 @@ div .pic3{
     top: 1307px;
     width: 270px;
     overflow: hidden;
+    height: 281px;
 }
 div .pic1::before,
 .pic2::before,
@@ -307,12 +311,12 @@ div .pic1::before,
 .pic4::before{
     content: '';
     top: -500px;
-    left: 11px;
+    left: 77px;
     position: absolute;
-    width: 200px;
+    width: 83px;
     height: 600px;
-    transition-duration: 0.5s;
-    background: rgba(255, 255, 255, 0.37);
+    transition-duration: 1.1s;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
     rotate: 52deg;
 }
 div .pic1:hover::before,
@@ -460,9 +464,249 @@ div .pic1:hover::before,
     position: absolute;
     top: 115px;
     right: 172px;
+    overflow: hidden;
+    height: 501px;
 }
 .pic6{
     position: absolute;
     top: 115px;
     right: 1090px;
+    overflow: hidden;
+    height: 501px;
+}
+div .pic5::before,
+.pic6::before{
+    content: '';
+    top: -500px;
+    left: 77px;
+    position: absolute;
+    width: 83px;
+    height: 600px;
+    transition-duration: 1.1s;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    rotate: 52deg;
+}
+div .pic5:hover::before,
+.pic6:hover::before{
+    opacity: 0.3;
+    top:440px;
+}
+.menuHeader p{
+    color: #c9ab81;
+    font-family: "Miniver", cursive;
+    font-size: 18px;
+    position: absolute;
+    top: 2565px;
+    right: 1319px;
+}
+.menuHeader h2{
+    color: #fff;
+    font-family: "myFont";
+    font-size: 60px;
+    line-height: 1.167;
+    padding: 5px 0px 15px;
+    position: absolute;
+    top: 2594px;
+    right: 976px;
+}
+.Menu{
+    display: grid;
+    color: white;
+    position: relative;
+    top: 1886px;
+    justify-content: space-evenly;
+    grid-auto-flow: column;
+}
+.parentOne p,
+.parentTwo p,
+.parentThree p{
+    color: #abb7ba;
+    font-family: 'Roboto';
+    line-height: 1.167;
+    font-size: 13px;
+    border-bottom-style: solid;
+    border-bottom-color: #1d2628;
+    padding-bottom: 18px;
+    border-bottom-width: 2px;
+    padding-top: 16px;
+}
+div .parentOne{
+    position: relative;
+    top: -12px;
+}
+.parentOne h4{
+    position: absolute;
+    top: 31px;
+    left: 103px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "myFont";
+}
+.parentTwo h4{
+    position: absolute;
+    top: 16px;
+    left: 102px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "myFont";
+}
+.parentThree h4{
+    position: absolute;
+    font-family: "myFont";
+    top: 18px;
+    left: 100px;
+    font-size: 24px;
+    font-weight: 700;
+}
+div .childOneParentOne,
+.childOneParentTwo,
+.childOneParentThree{
+    border-bottom-style: dashed;
+    border-bottom-color: #1d2628;
+    padding-bottom: 18px;
+    border-bottom-width: 2px;
+}
+.parentOne h5,
+.parentTwo h5,
+.parentThree h5{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "myFont";
+    padding-top: 33px;
+}
+.parentOne img{
+    top: 5px;
+    position: relative;
+}
+div .orderNumParentOne {
+    border-radius: 100%;
+    background-color: #131a1c;
+    width: 53px;
+    height: 53px;
+    left: 338px;
+    position: absolute;
+    top: 13px;
+    line-height: 1.5;
+}
+
+div .orderNumParentTwo {
+    border-radius: 100%;
+    background-color: #131a1c;
+    width: 53px;
+    height: 53px;
+    line-height: 1.5;
+    position: absolute;
+    right: -86px;
+    top: 1px;
+}
+div .orderNumParentThree {
+    border-radius: 100%;
+    background-color: #131a1c;
+    width: 53px;
+    height: 53px;
+    left: 329px;
+    position: absolute;
+    top: 1px;
+    line-height: 1.5;
+}
+.orderNumParentOne span,
+.orderNumParentTwo  span,
+.orderNumParentThree span {
+    color: rgb(255, 219, 166);
+    font-weight: 800;
+    font-size: 21px;
+    font-family: "myFont";
+    position: absolute;
+    top: 9px;
+    left: 12px;
+}
+.childTwoParentOne span,
+.childThreeParentOne span,
+.childFourParentOne span,
+.childFiveParentOne span,
+.childTwoParentTwo span,
+.childThreeParentTwo span,
+.childFourParentTwo span,
+.childFiveParentTwo span,
+.childTwoParentThree span,
+.childThreeParentThree span,
+.childFourParentThree span,
+.childFiveParentThree span{
+    color: #c9ab81;
+    font-weight: 700;
+    font-family: "myFont";
+}
+/* the first parent */
+
+.childTwoParentOne span {
+    position: absolute;
+    top: 154px;
+    left: 350px;
+}
+.childThreeParentOne span {
+    position: absolute;
+    top: 257px;
+    left: 350px;
+}
+.childFourParentOne span {
+    position: absolute;
+    top: 360px;
+    left: 350px;
+}
+.childFiveParentOne span {
+    position: absolute;
+    top: 463px;
+    left: 350px;
+}
+/* the second parent */
+.childTwoParentTwo span {
+    position: absolute;
+    top: 245px;
+    left: 338px;
+}
+.childThreeParentTwo span {
+    position: absolute;
+    top: 142px;
+    left: 338px;
+}
+.childFourParentTwo span {
+    position: absolute;
+    top: 348px;
+    left: 338px;
+}
+.childFiveParentTwo span {
+    position: absolute;
+    top: 451px;
+    left: 338px;
+}
+/* the third parent */
+.childTwoParentThree span {
+    position: absolute;
+    top: 245px;
+    left: 339px;
+}
+.childThreeParentThree span {
+    position: absolute;
+    top: 142px;
+    left: 339px;
+}
+.childFourParentThree span {
+    position: absolute;
+    top: 348px;
+    left: 339px;
+}
+.childFiveParentThree span {
+    position: absolute;
+    top: 451px;
+    left: 339px;
+}
+div .parentTwo {
+    position: relative;
+    left: -11px;
+    top: 4px;
+}
+div .parentThree {
+    position: relative;
+    left: -48px;
+    top: 4px;
 }
