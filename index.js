@@ -5,7 +5,7 @@ window.addEventListener('scroll', function () {
     let button = document.querySelector('#book');
     let icon = document.querySelector('.icon1');
     let scrolled = window.scrollY > 50;
-
+// the scroll navbar functionality
     if (scrolled) {
         nav.classList.add('scrolled');
         navbarHeader.classList.add('scrolled');
@@ -20,3 +20,16 @@ window.addEventListener('scroll', function () {
         icon.classList.remove('scrolled');
     }
 });
+// the navbar icon functionality
+let navbarMenus = document.querySelector(".navbarMenus");
+let responsiveNav = document.querySelector(".res-btn");
+
+responsiveNav.addEventListener('click', () => {
+    let isVisible = navbarMenus.getAttribute('data-visible') === 'true';
+
+    console.log('Button clicked. Was visible:', isVisible);
+
+    navbarMenus.setAttribute('data-visible', String(!isVisible));
+    console.log('Now visible:', !isVisible);
+});
+

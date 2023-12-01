@@ -710,3 +710,46 @@ div .parentThree {
     left: -48px;
     top: 4px;
 }
+.res-btn{
+    display: none;
+}
+/*Styles for smaller screens */
+@media only screen and (max-width: 600px) {
+    .navbarMenus {
+        position: fixed;
+        inset: 0 0 0 69%;
+        z-index: 5000;
+        display: flex;
+        flex-direction: column;
+        padding: 87px 31px;
+        background: #000000bd;
+        backdrop-filter: blur(10px);
+    }
+    .res-btn{
+        display: block;
+        position: absolute;
+        width: 5%;
+        top: 2rem;
+        right: 3rem;
+        z-index: 9999;
+        background-color: transparent;
+        border: none;
+        transform: translateX(100%);
+    }
+    .menu-icon{
+        position: absolute;
+        left: 10px;
+    }
+   .navbarMenus[data-visible="true"] {
+        transform: translateX(0%);
+    }
+}
+/* Styles for medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+}
+/* Styles for larger screens */
+@media only screen and (min-width: 1025px) {
+
+
+}
