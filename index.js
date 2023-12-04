@@ -25,11 +25,20 @@ let navbarMenus = document.querySelector(".navbarMenus");
 let responsiveNav = document.querySelector(".res-btn");
 
 responsiveNav.addEventListener('click', () => {
-    let isVisible = navbarMenus.getAttribute('data-visible') === 'true';
-
-    console.log('Button clicked. Was visible:', isVisible);
-
-    navbarMenus.setAttribute('data-visible', String(!isVisible));
-    console.log('Now visible:', !isVisible);
+    navbarMenus.classList.toggle("visible");
 });
+// the titling image
+    const tiltingImage = document.querySelector('.contact-img .tilting-image');
+    tiltingImage.addEventListener('mousemove', function(event) {
+        const boundingRect = tiltingImage.getBoundingClientRect();
+        const offsetX = event.clientX - boundingRect.left - boundingRect.width / 2;
+        const offsetY = event.clientY - boundingRect.top - boundingRect.height / 2;
+        const tiltAngleX = offsetX / 20;
+        const tiltAngleY = offsetY / 20;
 
+        tiltingImage.style.transform = `perspective(1000px) rotateX(${tiltAngleY}deg) rotateY(${tiltAngleX}deg)`;
+    });
+
+    tiltingImage.addEventListener('mouseout', function() {
+        tiltingImage.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+    });

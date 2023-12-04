@@ -19,12 +19,12 @@
             <button class="res-btn" aria-controls="navbarM" aria-expanded="false">
                 <i class="fa-solid fa-bars fa-2xl menu-icon" style="color: #c9ab81"></i>
             </button>
-            <div class="navbarMenus" id="navbarM" data-visible="false">
+            <div class="navbarMenus" id="navbarM">
                 <a href="#navbar">HOME</a>
                 <a href="#secondPage">ABOUT</a>
                 <a href="#third">FEATURE</a>
                 <a href="#menu">MENU</a>
-                <a href="#">INTRO</a>
+                <a href="#intro">INTRO</a>
                 <a href="#">CONTACT</a>
                 <button id="book">BOOK A TABLE</button>
             </div>
@@ -169,7 +169,75 @@
                 </div>
             </div>
         </section>
+        <section class="intro-vd" id="intro">
+            <a class="intro" href="https://www.youtube.com/watch?v=5rjB5JT9RC0&pp=ygUYY29va2luZyBtdXNpYyByZXN0YXVyZW50">
+                <i class="fa-solid fa-play"></i>
+            </a>
+        </section>
+        <section class="contact">
+            <div class="location">
+            <h3>FIND US HERE</h3>
+            <p> Avenue Marina 34568 NY (U.S) </p>
+            <p> +1 374 456 678 </p>
+            <p> info@restaurant.com</p>
+            <img src="icons/map.png" class="map">
+            </div>
+            <div class="contact-img">
+                <img src="images/lo.jpg" class="tilting-image">
+            </div>
+            <div class="opening">
+            <h3>OPENING TIME</h3>
+                <ul>
+                    <li>
+                        <ul class="days">
+                            <li>MON</li>
+                            <li>WED</li>
+                            <li>THU</li>
+                            <li>FRI</li>
+                            <li>SAT/SUN</li>
+                        </ul>
+                        <ul class="hours">
+                            <li>17:00 to 23:00</li>
+                            <li>19:00 to 24:00</li>
+                            <li>14:00 to 18:00</li>
+                            <li>16:00 to 24:00</li>
+                            <li>20:00 to 4:00</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="appointment">
+                <img src="icons/num.png" class="num">
+                <h6>Appointment</h6>
+                <p class="ap"> MAKE APPOINTMENT!</p>
+                <p class="phone">+1213456789 </p>
+            </div>
+        </section>
     </div>
-    <script src="index.js"></script>
+    <footer class="ft">
+        <div class="footerOne">
+            <h3>APPILO.</h3>
+            <p>LUXURY </br> RESTAURANT</p>
+            <hr class="line">
+        </div>
+       <!-- <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3" class="map">
+            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+            <a href="https://1map.com/map-embed">1 Map</a></div> -->
+
+    </footer>
+   <script src="index.js"></script>
+    <script>(function () {
+        var setting = {"query":"toronto","width":400,"height":300,"satellite":false,"zoom":11,"placeId":"ChIJpTvG15DL1IkRd8S0KlBVNTI","cid":"0x323555502ab4c477","coords":[43.653226,-79.3831843],"lang":"en","queryString":"toronto","centerCoord":[43.653226,-79.3831843],"id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"1037980"};
+        var d = document;
+        var s = d.createElement('script');
+        s.src = 'https://1map.com/js/script-for-user.js?embed_id=1037980';
+        s.async = true;
+        s.onload = function (e) {
+            window.OneMap.initMap(setting)
+        };
+        var to = d.getElementsByTagName('script')[0];
+        to.parentNode.insertBefore(s, to);
+    })();
+    </script>
 </body>
 </html>
