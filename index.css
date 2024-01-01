@@ -179,9 +179,9 @@ div .box2{
     height: 61px;
 }
 div .box3{
-   position: absolute;
+    position: absolute;
     left: 1015px;
-   bottom: -70px;
+    bottom: -70px;
     width: 296px;
     padding: 36px 40px;
     color: white;
@@ -189,7 +189,7 @@ div .box3{
     height: 61px;
 }
 div .box1{
-   position: absolute;
+    position: absolute;
     left: 203px;
     bottom: -70px;
     width: 296px;
@@ -749,17 +749,17 @@ div .parentThree {
         left: 10px;
         cursor: pointer;
     }
-   .navbarMenus.visible {
+    .navbarMenus.visible {
         left: 100%;
     }
-   /*#btn{
-       position: absolute;
-       top: 38rem;
-       left: 426px;
-       z-index: 5000;
-       width: 153px;
-       display: block;
-   }*/
+    /*#btn{
+        position: absolute;
+        top: 38rem;
+        left: 426px;
+        z-index: 5000;
+        width: 153px;
+        display: block;
+    }*/
 }
 /* Styles for medium screens */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
@@ -950,7 +950,7 @@ ul {
     position: absolute;
     left: 0em;
     top: 5187px;
-    z-index: 4000;
+    z-index: 900;
     padding: 312px 741px;
 }
 .line{
@@ -962,3 +962,155 @@ ul {
     background-color: rgb(219 219 219 / 11%);
     border: none;
 }
+.mainFrame{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 250px;
+    margin-top: -64px;
+}
+.frame1{
+    margin-left: -90px;
+    padding-right: 17px;
+}
+.f1s1{
+    color: #839095;
+    font-family: Roboto;
+    font-size: 16px;
+    width: 280px;
+    text-align: right;
+    line-height: 25px;
+    margin-top: -43px;
+}
+.f1s2{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: myFont;
+    text-align: right;
+    margin-top: 30px;
+
+}
+.f1s3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left:35% ;
+}
+.f1s3 .icon1 , .icon2 , .icon3{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    top: 20px;
+    position: relative;
+    margin-left: 10px;
+}
+.fa1{
+    position: absolute;
+    top: 16px;
+    left: 20px;
+}
+.fa2{
+    position: absolute;
+    top: 16px;
+    left: 17px;
+}
+.fa3{
+    position: absolute;
+    top: 16px;
+    left: 15px;
+}
+.icon1{
+    background-color: #3b5999;
+}
+.icon2{
+    background-color: #55acee;
+}
+.icon3{
+    background-color: #cd201f;
+}
+.links{
+    margin-top: -50px;
+    margin-left: 26px;
+    width: 80px;
+}
+.links a{
+    color: #99a6ad;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: myFont;
+    line-height: 52px;
+}
+.map iframe{
+    z-index: 3;
+    position: absolute;
+    height: 301px;
+    width: 340px;
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
+    left: 225px;
+    top: -101px;
+}
+.frame4{
+    margin-left: 440px;
+    margin-top: -50px;
+}
+.frame4 .title{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: myFont;
+    margin-bottom: 25px;
+
+}
+.frame4 div h1{
+    color: #c9c9c9;
+    font-size: 16px;
+    font-family: myFont;
+    width: 350px;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+.frame4 div h3{
+    color: #c9ab81;
+    font-size: 12px;
+    font-family: myFont;
+    margin-bottom: 25px;
+}
+.co{
+    color: #a58d6c ;
+    font-family: myFont;
+    font-size: 19px;
+    margin-top: -2px;
+}
+.copy{
+    position: absolute;
+    bottom: 25px;
+    left: 615px;
+    color: #839095;
+    font-family: myFont;
+    display: flex;
+    font-size: 19px;
+
+}
+
+/*.arrow{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #c9ab81;
+    text-align: center;
+}
+.fa-arrow-up{
+    padding-top: 18px;
+    font-size: 19px;
+    font-weight: 700;
+}
+.arrow:hover a{
+    color: #fdfdfd;
+}*/
